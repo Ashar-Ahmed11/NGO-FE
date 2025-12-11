@@ -5,13 +5,13 @@ const Footer = () => {
     <footer className=" text-white" style={{backgroundColor:'#4e4e4f'}}>
       <div className="container py-5">
         <div className="row">
-          {/* Travel Embassy Column */}
+          {/* Apna Ghar Column */}
           <div className="col-md-4 mb-4 mb-md-0">
             <h3 className="mb-4 text-white fw-bold">
-              <u>Travel Embassy Job Apply</u>
+              <u>Apna Ghar — NGO Services</u>
             </h3>
             <p>
-              Travel Embassy Job Apply helps people across Pakistan with a simple, fast, and reliable process. Apply with clear steps and trusted support.
+              Apna Ghar supports seniors, widows, and families with dignity. We offer Old Age Help, Widow Help, Home Financing, and Interest‑Free Loan Services with a simple, transparent process.
             </p>
           </div>
 
@@ -31,10 +31,10 @@ const Footer = () => {
                 <Link to="/" className="text-white text-decoration-none">About Us</Link>
               </li>
               <li className="mb-2">
-                <Link to="/" className="text-white text-decoration-none">Success Story: Empowering Lives through Travel Embassy Job Apply</Link>
+                <Link to="/" className="text-white text-decoration-none">Success Story: Empowering Lives with Apna Ghar</Link>
               </li>
               <li className="mb-2">
-                <Link to="/" className="text-white text-decoration-none">Welcome to Travel Embassy Job Apply</Link>
+                <Link to="/" className="text-white text-decoration-none">Welcome to Apna Ghar</Link>
               </li>
             </ul>
           </div>
@@ -74,7 +74,7 @@ const Footer = () => {
       <div className="bg-dark py-3 text-white">
   <div className="container d-flex justify-content-between align-items-center flex-wrap">
     <div className="small">
-      © Copyright Travel Embassy Job Apply Pakistan. All rights reserved.
+      © Copyright Apna Ghar Pakistan. All rights reserved.
     </div>
     <div>
       <Link to="/disclaimer" className="me-3 small text-white text-decoration-none">Disclaimer</Link>

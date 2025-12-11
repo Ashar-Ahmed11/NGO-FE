@@ -44,7 +44,7 @@ const Akhuwatstatus = () => {
             <img
               src={getCdnUrl(Akhuwat13)}
               style={{height:"150px",objectFit:'cover'}}
-              alt="Travel Embassy Job Apply Banner"
+              alt="Apna Ghar Support Banner"
               className="card-img-top rounded mb-3"
             />
             <form onSubmit={handleSubmit}>
@@ -74,9 +74,9 @@ const Akhuwatstatus = () => {
 
         {/* Right column: Info */}
         <div className="col-md-6 p-5">
-          <h2 className="fw-bold mb-3">Want to Check Your Job Application Status?</h2>
+          <h2 className="fw-bold mb-3">Want to Check Your Support Request Status?</h2>
           <p>
-            Stay updated in seconds, just enter your CNIC and instantly view the progress of your Travel Embassy Job Apply. Need assistance? Our WhatsApp support team is always here to help.
+            Stay updated in seconds: enter your CNIC to view your Apna Ghar request progress. Need help? Our WhatsApp support team is here for you.
           </p>
         </div>
       </div>

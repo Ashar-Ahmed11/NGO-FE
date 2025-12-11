@@ -9,10 +9,10 @@ const AkhuwatLoanBanner = () => {
         <div className="col-md-6 p-5 d-flex align-items-center order-2">
           <div>
             <p className="fs-6 fw-light">
-            Welcome to Travel Embassy Job Apply — fast, reliable support for your career. We provide tools, guidance, and support to help you reach your goals.
+            Welcome to Apna Ghar — compassionate support for seniors, widows, and families. We provide guidance and timely help when you need it most.
             </p>
             <p className="mt-3">
-              How to Apply – <a href="/" className="text-primary text-decoration-none fw-bold">Travel Embassy Job Apply</a>:
+              How to Get Help – <a href="/" className="text-primary text-decoration-none fw-bold">Apna Ghar Services</a>:
             </p>
           </div>
         </div>

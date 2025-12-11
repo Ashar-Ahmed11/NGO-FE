@@ -6,18 +6,22 @@ const Cards = () => {
 
     <div className='' style={{ backgroundColor: '#f7f8f9' }}>
       <div className='container text-center' >
-      {/* <p className='w-70% text-center'>Travel Embassy Job Apply</p> */}
-      <p className='w-70% text-center' style={{paddingTop:'26px'}}>Travel Embassy Job Apply</p>
+      {/* <p className='w-70% text-center'>Apna Ghar</p> */}
+      <p className='w-70% text-center' style={{paddingTop:'26px'}}>Apna Ghar — NGO Services</p>
       
       <h1 ><b>What We Offer</b></h1>
-        <h1><b>Start Your Journey Toward a Better Tomorrow</b></h1>
+        <h1><b>Care and Support When It Matters Most</b></h1>
         <div className="row mt-5 d-flex justify-content-center flex-wrap">
           {[
-            { icon: 'fa-money', title: 'Apply for Jobs as an Individual', desc: 'Clear requirements and simple updates, know exactly where your application stands at every stage.' },
-            { icon: 'fa-suitcase', title: 'Business Job Applications', desc: 'A smooth, straightforward process with fast decisions and minimal paperwork.' },
-            { icon: 'fa-eye', title: 'Home-Based Job Applications', desc: 'Get the support you need for home-related roles with a quick and easy application flow.' },
-            { icon: 'fa-heart', title: 'Wedding Event Job Applications', desc: 'Find work for special events with flexible options and speedy approvals.' },
-            { icon: 'fa-refresh', title: 'Car & Transport Job Applications', desc: 'Fast approvals and flexible opportunities for drivers and transport-related roles — without the hassle.' },
+            { icon: 'fa-heart', title: 'Old Age Help', desc: 'Monthly care, essentials, and medical assistance for seniors.' },
+            { icon: 'fa-female', title: 'Widow Help', desc: 'Direct support to widows for stability and dignity.' },
+            { icon: 'fa-home', title: 'Home Financing', desc: 'Assistance for building, rent, and essential home needs.' },
+            { icon: 'fa-handshake-o', title: 'Loan Services', desc: 'Interest‑free microloans for urgent family needs.' },
+            { icon: 'fa-user', title: 'Individual Support Requests', desc: 'Apply for aid with clear steps and timely updates.' },
+            { icon: 'fa-briefcase', title: 'Small Business Support', desc: 'Grants or interest‑free loans to sustain livelihoods.' },
+            { icon: 'fa-home', title: 'Home Assistance Programs', desc: 'Help for rent, utilities, and essential household needs.' },
+            { icon: 'fa-gift', title: 'Family Event Assistance', desc: 'Support for essential family occasions when needed most.' },
+            { icon: 'fa-car', title: 'Transport Assistance', desc: 'Aid for medical visits and urgent travel requirements.' },
           ].map((card, i) => (
             <div className={`col-md-4 col-12 mt-4 ${i >= 3 ? 'mb-4' : ''}`} key={card.title}>
               <div
@@ -42,7 +46,7 @@ const Cards = () => {
                     onMouseEnter={(e) => { e.currentTarget.style.boxShadow = '0 8px 20px rgba(255,119,41,0.5)'; }}
                     onMouseLeave={(e) => { e.currentTarget.style.boxShadow = '0 6px 16px rgba(255,119,41,0.35)'; }}
                   >
-                    Contact Us&nbsp;→
+                    Get Support&nbsp;→
                   </a>
                 </div>
               </div>

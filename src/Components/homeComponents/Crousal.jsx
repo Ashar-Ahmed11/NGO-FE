@@ -137,12 +137,12 @@ const Crousal = () => {
               className={`${isMobile ? 'fw-bold display-4' : 'display-5 fw-bold '} `}
               style={{ color: 'white' }}
             >
-              Travel Embassy Job- Work Beyond Borders
+              Apna Ghar — Compassion with Action
             </h1>
 
             <p className="text-light ">
-              From embassy vacancies to global travel jobs, we make your job search simple, secure, and stress-free. 
-              Find real opportunities, get expert help, and start your international journey today.
+              Old Age Help, Widow Help, Home Financing, and Loan Services. 
+              Simple, transparent, and timely support for families.
             </p>
           </div>
 

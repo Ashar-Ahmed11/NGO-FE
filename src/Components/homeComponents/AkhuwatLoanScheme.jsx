@@ -8,13 +8,13 @@ const AkhuwatLoanScheme = ()=>{
       <div className="container ">
         <div className="row align-items-center">
           <div className="col-lg-5 " >
-            <h1 className="fw-bold mb-4">Find Your Dream Job Abroad – Apply Online Today</h1>
+            <h1 className="fw-bold mb-4">Find the Right Support — Apply Online Today</h1>
             
             <p className="mb-4 fw-bold mt-1">
-            Looking for exciting opportunities in Canada, Saudi Arabia, Dubai, or Bahrain? Whether it’s teaching jobs, security positions, driver roles, or hotel vacancies, we make online job apply simple and fast. Explore Canada online jobs apply, Saudi jobs online apply, Dubai jobs online apply, or Bahrain jobs for Pakistani applicants—all in one place.
+            Apna Ghar connects you with timely, transparent support. Choose Old Age Help, Widow Help, Home Financing, or Loan Services and apply in minutes.
             </p>
             <p className="mb-4 fw-bold mt-1">
-            With our platform, you can easily apply for jobs in Canada, Dubai company jobs online apply, bahrain police jobs, or bahrain hotel job vacancies without stress. Track your application, get clear guidance, and take the first step toward a rewarding career abroad.
+            Track your request, get clear guidance, and receive compassionate assistance designed to protect dignity and stability for families.
             </p>
             
             <div className="border-start border-primary border-4 ps-3 mb-4 mt-1">
@@ -28,7 +28,7 @@ const AkhuwatLoanScheme = ()=>{
           <div className="col-lg-7 mt-5">
             <img 
               src={getCdnUrl(Akhuwat12)}
-              alt="Travel Embassy Job Apply Details in Urdu" 
+              alt="Apna Ghar Support Details" 
               className="card-img-top "
               // style={{height:"500px"}}
             />

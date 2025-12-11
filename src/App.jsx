@@ -43,24 +43,24 @@ const color = "#963520"
 
     <>
       {siteData && <div>{<div className='whatsapp brand-image'>
-        <p className='my-0 mx-2 pl-2 fw-bold' style={{ fontSize: "11px", width: '70px', textAlign: 'center', color: color }}>Travel Embassy Live Support</p>
+        <p className='my-0 mx-2 pl-2 fw-bold' style={{ fontSize: "11px", width: '70px', textAlign: 'center', color: "#0cc143" }}>Apna Ghar Live Support</p>
         {/* 923428347762 */}
-        <a className='mx-3' target="_blank" aria-label="Chat on WhatsApp" href={`https://wa.me/${siteData.phone.replace(" ", "").replace(/^0/, '92')}?text=Travel Embassy کی طرف سے ہم آپ کی کیا مدد کر سکتے ہیں؟`}> <i style={{ color: '#963520' }} className="fa fa-whatsapp" aria-hidden="true"></i> </a>
+        <a className='mx-3' target="_blank" aria-label="Chat on WhatsApp" href={`https://wa.me/${siteData.phone.replace(" ", "").replace(/^0/, '92')}?text=Apna Ghar کی طرف سے ہم آپ کی کیا مدد کر سکتے ہیں؟`}> <i style={{ color: '#0cc143' }} className="fa fa-whatsapp" aria-hidden="true"></i> </a>
       </div>}
 
         <div className='phonenum brand-image'>
-          <p className='m-0 fw-bold' style={{ fontSize: "11px", width: '55px', textAlign: 'center', color: color }}>Travel Embassy Head Office No.</p>
+          <p className='m-0 fw-bold' style={{ fontSize: "11px", width: '55px', textAlign: 'center', color: "#0cc143" }}>Apna Ghar Head Office No.</p>
           {/* 923428347762 */}
-          <a aria-label="Chat on WhatsApp" href={`tel:$${siteData.description.replace(" ", "").replace(/^0/, '92')}`}> <i style={{ color: '#963520' }} className="fa fa-phone-square" aria-hidden="true"></i> </a>
+          <a aria-label="Chat on WhatsApp" href={`tel:$${siteData.description.replace(" ", "").replace(/^0/, '92')}`}> <i style={{ color: '#0cc143' }} className="fa fa-phone-square" aria-hidden="true"></i> </a>
         </div>
       </div>}
       <div className="overflow-hidden whitespace-nowrap relative" style={{ backgroundColor: color }}>
         <div className="d-flex headlineMove" style={{ fontWeight: 'bold', width: 'max-content' }}>
           <p className="p-2 m-0 text-white">
-            Travel Embassy Job Apply — Fast approvals, clear terms, trusted support. Contact: {siteData&&siteData.phone}
+            Apna Ghar — Old Age Help, Widow Help, Home Financing, Loan Services. Contact: {siteData&&siteData.phone}
           </p>
           <p className="p-2 m-0 text-white">
-            Travel Embassy Job Apply — Fast approvals, clear terms, trusted support. Contact: {siteData&&siteData.description}
+            Apna Ghar — Compassionate support and transparent process. Contact: {siteData&&siteData.description}
           </p>
         </div>
       </div>

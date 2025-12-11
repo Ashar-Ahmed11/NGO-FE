@@ -8,13 +8,13 @@ const AkhuwatLoanInstruction = ()=>{
         <h1 className="text-center mb-4 fw-bold">Stay Updated With Your Application Progress</h1>
         
         <p className="text-center mb-5">
-        With Travel Embassy, you can instantly view your application details and records whenever you need them.
+        With Apna Ghar, you can instantly view your support request details and records whenever you need them.
         </p>
         
         <h2 className="fw-bold mb-4">How to Check Your Status</h2>
         
         <ol className="fs-5">
-          <li className="mb-2">Visit the official Travel Embassy website.</li>
+          <li className="mb-2">Visit the official Apna Ghar website.</li>
           <li className="mb-2">Find and open the “Application Status Checker.”</li>
           <li className="mb-2">Hit Check Status to see:</li>
           <ul>

@@ -22,188 +22,164 @@ const JobCategories = () => {
   return (
     <div className="container py-5">
       <div className="text-center mb-5">
-        <h2 className="fw-bold">JOB Categories</h2>
-        <p className="text-muted">8 Hours Duty + Overtime No Age Limit | No Degree | Without IELTS</p>
+        <h2 className="fw-bold">NGO Services</h2>
+        <p className="text-muted">Support for seniors, widows, home financing, and loan services.</p>
       </div>
 
       <div className="row g-4">
-        {/* Security Guard */}
-        <div  data-aos="fade-right"
-            data-aos-duration="500" className="col-md-6 col-lg-4">
-          
+        {/* Old Age Help */}
+        <div data-aos="fade-right" data-aos-duration="500" className="col-md-6 col-lg-3">
           <div className="card h-100 shadow-lg border-0">
             <img 
               src={getCdnUrl(img1)}
               className="card-img-top" 
-              alt="Security Guard"
+              alt="Old Age Help"
               style={{height: '200px', objectFit: 'cover'}}
             />
             <div className="card-body text-center">
-              <h5 className="card-title fw-bold mb-3">Security Guard</h5>
-              <p className="text-muted mb-1">Salary</p>
-              <h3 className="fw-bold mb-1">3500</h3>
-              <p className="text-muted small">Canadian Dollar-commission 330</p>
-              <button className="btn px-4 mt-3" style={{backgroundColor:'#963520', color: 'white'}} onClick={() => handleApply('Security Guard')}>Apply Now</button>
+              <h5 className="card-title fw-bold mb-3">Old Age Help</h5>
+              <p className="text-muted small">Care, essentials, and dignity for senior citizens.</p>
+              <button className="btn px-4 mt-3" style={{backgroundColor:'#963520', color: 'white'}} onClick={() => handleApply('Old Age Help')}>Get Support</button>
             </div>
           </div>
         </div>
 
-        {/* Driver */}
-        <div  data-aos="fade-left"
-            data-aos-duration="500" className="col-md-6 col-lg-4">
+        {/* Widow Help */}
+        <div data-aos="fade-left" data-aos-duration="500" className="col-md-6 col-lg-3">
           <div className="card h-100 shadow-lg border-0">
             <img 
               src={getCdnUrl(img2)}
               className="card-img-top" 
-              alt="Driver"
+              alt="Widow Help"
               style={{height: '200px', objectFit: 'cover'}}
             />
             <div className="card-body text-center">
-              <h5 className="card-title fw-bold mb-3">Driver</h5>
-              <p className="text-muted mb-1">Salary</p>
-              <h3 className="fw-bold mb-1">3500</h3>
-              <p className="text-muted small">Canadian Dollar-commission 330</p>
-              <button className="btn px-4 mt-3" style={{backgroundColor:'#963520', color: 'white'}} onClick={() => handleApply('Driver')}>Apply Now</button>
+              <h5 className="card-title fw-bold mb-3">Widow Help</h5>
+              <p className="text-muted small">Monthly aid and emergency assistance for widows.</p>
+              <button className="btn px-4 mt-3" style={{backgroundColor:'#963520', color: 'white'}} onClick={() => handleApply('Widow Help')}>Get Support</button>
             </div>
           </div>
         </div>
 
-        {/* Cook/Chef */}
-        <div  data-aos="fade-right"
-            data-aos-duration="500" className="col-md-6 col-lg-4">
+        {/* Home Financing */}
+        <div data-aos="fade-right" data-aos-duration="500" className="col-md-6 col-lg-3">
           <div className="card h-100 shadow-lg border-0">
             <img 
               src={getCdnUrl(img3)}
               className="card-img-top" 
-              alt="Cook/Chef"
+              alt="Home Financing"
               style={{height: '200px', objectFit: 'cover'}}
             />
             <div className="card-body text-center">
-              <h5 className="card-title fw-bold mb-3">Cook/Chef</h5>
-              <p className="text-muted mb-1">Salary</p>
-              <h3 className="fw-bold mb-1">3000</h3>
-              <p className="text-muted small">Canadian Dollar-Commission 300</p>
-              <button className="btn px-4 mt-3" style={{backgroundColor:'#963520', color: 'white'}} onClick={() => handleApply('Cook/Chef')}>Apply Now</button>
+              <h5 className="card-title fw-bold mb-3">Home Financing</h5>
+              <p className="text-muted small">Support for building, rent, or essential home needs.</p>
+              <button className="btn px-4 mt-3" style={{backgroundColor:'#963520', color: 'white'}} onClick={() => handleApply('Home Financing')}>Get Support</button>
             </div>
           </div>
         </div>
 
-        {/* Plumber */}
-        <div  data-aos="fade-left"
-            data-aos-duration="500
-            " className="col-md-6 col-lg-4">
+        {/* Loan Services */}
+        <div data-aos="fade-left" data-aos-duration="500" className="col-md-6 col-lg-3">
           <div className="card h-100 shadow-lg border-0">
             <img 
               src={getCdnUrl(img4)}
               className="card-img-top" 
-              alt="Plumber"
+              alt="Loan Services"
               style={{height: '200px', objectFit: 'cover'}}
             />
             <div className="card-body text-center">
-              <h5 className="card-title fw-bold mb-3">Plumber</h5>
-              <p className="text-muted mb-1">Salary</p>
-              <h3 className="fw-bold mb-1">3200</h3>
-              <p className="text-muted small">Canadian Dollar-commission 320</p>
-              <button className="btn px-4 mt-3" style={{backgroundColor:'#963520', color: 'white'}} onClick={() => handleApply('Plumber')}>Apply Now</button>
+              <h5 className="card-title fw-bold mb-3">Loan Services</h5>
+              <p className="text-muted small">Interest‑free microloans for urgent and family needs.</p>
+              <button className="btn px-4 mt-3" style={{backgroundColor:'#963520', color: 'white'}} onClick={() => handleApply('Loan Services')}>Get Support</button>
             </div>
           </div>
         </div>
 
-        {/* Electrician */}
-        <div  data-aos="fade-right"
-            data-aos-duration="500" className="col-md-6 col-lg-4">
+        {/* Healthcare Assistance */}
+        <div data-aos="fade-right" data-aos-duration="500" className="col-md-6 col-lg-3">
           <div className="card h-100 shadow-lg border-0">
             <img 
               src={getCdnUrl(img5)}
               className="card-img-top" 
-              alt="Electrician"
+              alt="Healthcare Assistance"
               style={{height: '200px', objectFit: 'cover'}}
             />
             <div className="card-body text-center">
-              <h5 className="card-title fw-bold mb-3">Electrician</h5>
-              <p className="text-muted mb-1">Salary</p>
-              <h3 className="fw-bold mb-1">3400</h3>
-              <p className="text-muted small">Canadian Dollar-commission 340</p>
-              <button className="btn  px-4 mt-3" style={{backgroundColor:'#963520', color: 'white'}} onClick={() => handleApply('Electrician')}>Apply Now</button>
+              <h5 className="card-title fw-bold mb-3">Healthcare Assistance</h5>
+              <p className="text-muted small">Medical aid and medicines for deserving families.</p>
+              <button className="btn px-4 mt-3" style={{backgroundColor:'#963520', color: 'white'}} onClick={() => handleApply('Healthcare Assistance')}>Get Support</button>
             </div>
           </div>
         </div>
 
-        {/* Warehouse Worker */}
-        <div  data-aos="fade-left"
-            data-aos-duration="500" className="col-md-6 col-lg-4">
+        {/* Education Support */}
+        <div data-aos="fade-left" data-aos-duration="500" className="col-md-6 col-lg-3">
           <div className="card h-100 shadow-lg border-0">
             <img 
               src={getCdnUrl(img6)}
               className="card-img-top" 
-              alt="Warehouse Worker"
+              alt="Education Support"
               style={{height: '200px', objectFit: 'cover'}}
             />
             <div className="card-body text-center">
-              <h5 className="card-title fw-bold mb-3">Warehouse Worker</h5>
-              <p className="text-muted mb-1">Salary</p>
-              <h3 className="fw-bold mb-1">3100</h3>
-              <p className="text-muted small">Canadian Dollar-commission 310</p>
-              <button className="btn px-4 mt-3" style={{backgroundColor:'#963520', color: 'white'}} onClick={() => handleApply('Warehouse Worker')}>Apply Now</button>
+              <h5 className="card-title fw-bold mb-3">Education Support</h5>
+              <p className="text-muted small">School fees, books, and essentials for students.</p>
+              <button className="btn px-4 mt-3" style={{backgroundColor:'#963520', color: 'white'}} onClick={() => handleApply('Education Support')}>Get Support</button>
             </div>
           </div>
         </div>
 
-
-        <div  data-aos="fade-left"
-            data-aos-duration="500" className="col-md-6 col-lg-4">
+        {/* Livelihood Support */}
+        <div data-aos="fade-right" data-aos-duration="500" className="col-md-6 col-lg-3">
           <div className="card h-100 shadow-lg border-0">
-              <img 
+            <img 
               src={getCdnUrl(img7)}
               className="card-img-top" 
-              alt="Carpenter"
+              alt="Livelihood Support"
               style={{height: '200px', objectFit: 'cover'}}
             />
             <div className="card-body text-center">
-              <h5 className="card-title fw-bold mb-3"> Carpenter</h5>
-              <p className="text-muted mb-1">Salary</p>
-              <h3 className="fw-bold mb-1">3100</h3>
-              <p className="text-muted small">Canadian Dollar-commission 310</p>
-              <button className="btn px-4 mt-3" style={{backgroundColor:'#963520', color: 'white'}} onClick={() => handleApply('Carpenter')}>Apply Now</button>
+              <h5 className="card-title fw-bold mb-3">Livelihood Support</h5>
+              <p className="text-muted small">Tools and small grants to start micro‑business.</p>
+              <button className="btn px-4 mt-3" style={{backgroundColor:'#963520', color: 'white'}} onClick={() => handleApply('Livelihood Support')}>Get Support</button>
             </div>
           </div>
         </div>
-        <div  data-aos="fade-left"
-            data-aos-duration="500" className="col-md-6 col-lg-4">
+
+        {/* Emergency Relief */}
+        <div data-aos="fade-left" data-aos-duration="500" className="col-md-6 col-lg-3">
           <div className="card h-100 shadow-lg border-0">
             <img 
               src={getCdnUrl(img8)}
               className="card-img-top" 
-              alt="Painter"
+              alt="Emergency Relief"
               style={{height: '200px', objectFit: 'cover'}}
             />
             <div className="card-body text-center">
-              <h5 className="card-title fw-bold mb-3">Painter</h5>
-              <p className="text-muted mb-1">Salary</p>
-              <h3 className="fw-bold mb-1">3300</h3>
-              <p className="text-muted small">Canadian Dollar-commission 310</p>
-              <button className="btn px-4 mt-3" style={{backgroundColor:'#963520', color: 'white'}} onClick={() => handleApply('Painter')}>Apply Now</button>
+              <h5 className="card-title fw-bold mb-3">Emergency Relief</h5>
+              <p className="text-muted small">Immediate help during crises and emergencies.</p>
+              <button className="btn px-4 mt-3" style={{backgroundColor:'#963520', color: 'white'}} onClick={() => handleApply('Emergency Relief')}>Get Support</button>
             </div>
           </div>
         </div>
-        <div  data-aos="fade-left"
-            data-aos-duration="500" className="col-md-6 col-lg-4">
+
+        {/* Disability Support */}
+        <div data-aos="fade-right" data-aos-duration="500" className="col-md-6 col-lg-3">
           <div className="card h-100 shadow-lg border-0">
             <img 
               src={getCdnUrl(img9)}
               className="card-img-top" 
-              alt="Mechanic"
+              alt="Disability Support"
               style={{height: '200px', objectFit: 'cover'}}
             />
             <div className="card-body text-center">
-              <h5 className="card-title fw-bold mb-3">Mechanic</h5>
-              <p className="text-muted mb-1">Salary</p>
-              <h3 className="fw-bold mb-1">3400</h3>
-              <p className="text-muted small">Canadian Dollar-commission 310</p>
-              <button className="btn px-4 mt-3" style={{backgroundColor:'#963520', color: 'white'}} onClick={() => handleApply('Mechanic')}>Apply Now</button>
+              <h5 className="card-title fw-bold mb-3">Disability Support</h5>
+              <p className="text-muted small">Assistive devices and monthly care for PWDs.</p>
+              <button className="btn px-4 mt-3" style={{backgroundColor:'#963520', color: 'white'}} onClick={() => handleApply('Disability Support')}>Get Support</button>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   );

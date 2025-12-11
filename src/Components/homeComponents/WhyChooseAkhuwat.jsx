@@ -23,10 +23,10 @@ const WhyChooseAkhuwat = () => {
         <div className="row align-items-center">
           <div className="col-lg-5">
             <h2 className="fw-bold mb-4 display-5">
-            Why Travel Embassy Job Apply Is the Right Choice for You
+            Why Apna Ghar Is the Right Choice for You
             </h2>
             <p>
-           At Travel Embassy, we make support simple. Our process is fast, transparent, and designed for everyone. We are here to help you with education, medical needs, a new home, or a growing business. Apply online in minutes or visit your nearest centre for guidance. No confusion. No hidden fees. Just clear terms and a trusted path toward your next step.
+           At Apna Ghar, support is simple, fast, and transparent. We’re here for seniors, widows, and families—whether it’s home financing or interest‑free loans. Apply online in minutes or visit your nearest centre.
 
             </p>
           </div>

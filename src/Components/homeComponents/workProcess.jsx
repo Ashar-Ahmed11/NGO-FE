@@ -5,11 +5,11 @@ const WorkProcess = () => {
     <div className="container py-5">
       <div className="text-center mb-5">
         <p className="text-warning mb-2" style={{borderLeft: '3px solid #963520', paddingLeft: '10px', display: 'inline-block'}}>
-          Work Process
+          Support Process
         </p>
-        <h2 className="fw-bold mb-3">Our Streamlined Canada Visa Process</h2>
+        <h2 className="fw-bold mb-3">Our Support Process at Apna Ghar</h2>
         <p className="text-muted">
-          Enjoy a smooth, stress-free Canada job visa journey with clear steps and expert support.
+          Get compassionate, transparent help with clear steps and timely updates.
         </p>
       </div>
 
@@ -20,13 +20,13 @@ const WorkProcess = () => {
             <div className="mb-3" style={{  display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
               <img 
                 src="https://canadajobguide.com/wp-content/uploads/2025/08/Frame-52.png" 
-                alt="Affordable Consultancy"
+                alt="Support Guidance"
                 style={{width: '100px', height: '100px', objectFit: 'contain'}}
               />
             </div>
-            <h5 className="fw-bold mb-3">Personalized Guidance for Your Canada Job Visa</h5>
+            <h5 className="fw-bold mb-3">Personalized Guidance for Your Support Request</h5>
             <p className="text-muted small">
-              "Get tailored advice from experienced consultants who help you prepare with confidence and clarity."
+              "Get tailored advice from our team to apply with confidence and clarity."
             </p>
           </div>
         </div>
@@ -37,13 +37,13 @@ const WorkProcess = () => {
             <div className="mb-3" style={{  display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
               <img 
                 src="https://canadajobguide.com/wp-content/uploads/2025/08/Frame-51.png" 
-                alt="Affordable Consultancy"
+                alt="Quick Verification"
                 style={{width: '100px', height: '100px', objectFit: 'contain'}}
               />
             </div>
-            <h5 className="fw-bold mb-3">Faster Processing Support for Your Visa Application</h5>
+            <h5 className="fw-bold mb-3">Quick Verification and Status Updates</h5>
             <p className="text-muted small">
-              "Move your application forward quickly with timely help, smart updates, and a process designed to avoid delays."
+              "We verify details promptly and keep you updated at every step to avoid delays."
             </p>
           </div>
         </div>
@@ -54,13 +54,13 @@ const WorkProcess = () => {
             <div className="mb-3" style={{  display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
               <img 
                 src="https://canadajobguide.com/wp-content/uploads/2025/08/Frame-50.png" 
-                alt="Affordable Consultancy"
+                alt="Transparent Process"
                 style={{width: '100px', height: '100px', objectFit: 'contain'}}
               />
             </div>
-            <h5 className="fw-bold mb-3">Affordable Consultancy With Real Value</h5>
+            <h5 className="fw-bold mb-3">Fair and Transparent Process</h5>
             <p className="text-muted small">
-              "Access expert Canada visa consultancy at a price that fits your budget, delivering reliable guidance without heavy costs."
+              "Clear criteria, simple documentation, and zero hidden costs—support with dignity."
             </p>
           </div>
         </div>
@@ -71,13 +71,13 @@ const WorkProcess = () => {
             <div className="mb-3" style={{  display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
               <img 
                 src="https://canadajobguide.com/wp-content/uploads/2025/08/Frame-53.png" 
-                alt="Affordable Consultancy"
+                alt="Trusted Impact"
                 style={{width: '100px', height: '100px', objectFit: 'contain'}}
               />
             </div>
-            <h5 className="fw-bold mb-3">Trusted Worldwide for Canada Visa Successe</h5>
+            <h5 className="fw-bold mb-3">Trusted Community Impact</h5>
             <p className="text-muted small">
-              "Join thousands who rely on our transparent, professional, and trusted support for their Canada job visa applications."
+              "Join thousands of families who trust Apna Ghar for timely, compassionate support."
             </p>
           </div>
         </div>

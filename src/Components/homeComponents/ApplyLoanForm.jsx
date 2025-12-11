@@ -61,7 +61,7 @@ const ApplyLoanForm = () => {
                 fontWeight: 'bold',
               }}
             >
-              Quick Job Apply
+              Quick Support Request
             </h4>
 
             <form
@@ -90,19 +90,12 @@ const ApplyLoanForm = () => {
                     className="form-control"
                     style={{ appearance: 'none', WebkitAppearance: 'none', MozAppearance: 'none', paddingRight: '2.5rem' }}
                   >
-                    <option value="" disabled hidden>Select Country</option>
-                    {/* Top Islamic countries (excluding Pakistan) */}
-                    <option>Saudi Arabia</option>
-                    <option>United Arab Emirates</option>
-                    <option>Indonesia</option>
-                    <option>Turkey</option>
-                    <option>Malaysia</option>
-                    {/* Top Western countries */}
-                    <option>United States</option>
-                    <option>United Kingdom</option>
-                    <option>Canada</option>
-                    <option>Germany</option>
-                    <option>Australia</option>
+                    <option value="" disabled hidden>Select City/Region</option>
+                    <option>Lahore</option>
+                    <option>Karachi</option>
+                    <option>Islamabad</option>
+                    <option>Rawalpindi</option>
+                    <option>Faisalabad</option>
                   </select>
                   <span className="fa fa-chevron-down" style={{ position: 'absolute', right: '12px', top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none', color: '#666' }}></span>
                 </div>
@@ -126,16 +119,11 @@ const ApplyLoanForm = () => {
                     className="form-control"
                     style={{ appearance: 'none', WebkitAppearance: 'none', MozAppearance: 'none', paddingRight: '2.5rem' }}
                   >
-                    <option value="" disabled hidden>Select Job</option>
-                    <option>Security Guard</option>
-                    <option>Driver</option>
-                    <option>Cook/Chef</option>
-                    <option>Plumber</option>
-                    <option>Electrician</option>
-                    <option>Warehouse Worker</option>
-                    <option>Carpenter</option>
-                    <option>Painter</option>
-                    <option>Mechanic</option>
+                    <option value="" disabled hidden>Select Service</option>
+                    <option>Old Age Help</option>
+                    <option>Widow Help</option>
+                    <option>Home Financing</option>
+                    <option>Loan Services</option>
                   </select>
                   <span className="fa fa-chevron-down" style={{ position: 'absolute', right: '12px', top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none', color: '#666' }}></span>
                 </div>
@@ -346,7 +334,7 @@ const ApplyLoanForm = () => {
 
         {/* Right column: Info */}
         <div className="col-md-6 p-5 order-1 order-md-2">
-          <h2 className="fw-bold mb-3">Travel Embassy Job Apply 2025</h2>
+          <h2 className="fw-bold mb-3">Apna Ghar Support 2025</h2>
           {/* <p>
             Enter your CNIC to see where your Travel Embassy Job Apply stands right now. Use our WhatsApp helpline for help or questions.
           </p> */}
