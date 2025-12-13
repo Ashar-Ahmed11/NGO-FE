@@ -3,9 +3,9 @@ import React, { useEffect, useState } from "react";
 import Sidebar from "./Sidebar";
 import Infographic from '../Images/Infograph.png'
 // import aboutUsImg from '../Images/Akhuwat Foundation loan service.jpg'
-import asaanQarz15 from '../Images/newAkhuwat20.jpg'
-import asaanQarz16 from '../Images/newAkhuwat21.jpg'
-import asaanQarz17 from '../Images/newAkhuwat22.jpg'
+import asaanQarz15 from '../Images/29.png'
+import asaanQarz16 from '../Images/30.png'
+import asaanQarz17 from '../Images/31.png'
 import { getCdnUrl } from '../utils/cdnImage'
 
 const AboutUs = () => {

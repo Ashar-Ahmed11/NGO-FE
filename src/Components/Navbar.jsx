@@ -25,28 +25,28 @@ const Navbar = () => {
                 <Link className="nav-link fs-5 fw-bold" to="/">Apply Now</Link>
               </li> */}
               <li className="nav-item dropdown mx-2">
-                <Link
+                <div
                   className="nav-link fs-5 fw-bold "
                   to="/about-us"
                   role="button"
                   aria-expanded="false"
                 >
                   Services
-                </Link>
+                </div>
                 <ul className="dropdown-menu">
             
-                  <li><Link className="dropdown-item" to="/">Old Age Help</Link></li>
-                  <li><Link className="dropdown-item" to="/">Widow Help</Link></li>
-                  <li><Link className="dropdown-item" to="/">Home Financing</Link></li>
-                  <li><Link className="dropdown-item" to="/">Loan Services</Link></li>
+                  <li><Link className="dropdown-item" to="/old-age-help">Old Age Help</Link></li>
+                  <li><Link className="dropdown-item" to="/widow-help">Widow Help</Link></li>
+                  <li><Link className="dropdown-item" to="/home-financing">Home Financing</Link></li>
+                  <li><Link className="dropdown-item" to="/loan-services">Loan Services</Link></li>
                 
                 </ul>
               </li>
               <li className="nav-item mx-2">
-                <Link className="nav-link fs-5 fw-bold" to="/">About Us</Link>
+                <Link className="nav-link fs-5 fw-bold" to="/about-us">About Us</Link>
               </li>
               <li className="nav-item mx-2">
-                <Link className="nav-link fs-5 fw-bold" to="/">Contact Us</Link>
+                <Link className="nav-link fs-5 fw-bold" to="/contact-us">Contact Us</Link>
               </li>
               {/* <li className="nav-item mx-2">
                 <Link className="nav-link fs-5 fw-bold" to="/visa">Visa</Link>

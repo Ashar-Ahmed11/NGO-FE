@@ -12,6 +12,11 @@ import PrivacyPolicy from './Components/PrivacyPolicy';
 import TermsAndCondition from './Components/TermsAndCondition';
 import Disclaimer from './Components/Disclaimer';
 import ContactUS from './Components/contactUs';
+import OldAgeHelp from './Components/OldAgeHelp';
+import WidowHelp from './Components/WidowHelp';
+import HomeFinancing from './Components/HomeFinancing';
+import LoanServices from './Components/LoanServices';
+import { Title, Meta } from 'react-meta-elements'
 import {
 
   Switch,
@@ -42,6 +47,11 @@ const color = "#963520"
   return (
 
     <>
+    
+      
+        <Title>{siteData?.metaTitle}</Title>
+        <Meta name="description" content={siteData?.metaDesc} />
+      
       {siteData && <div>{<div className='whatsapp brand-image'>
         <p className='my-0 mx-2 pl-2 fw-bold' style={{ fontSize: "11px", width: '70px', textAlign: 'center', color: "#0cc143" }}>Apna Ghar Live Support</p>
         {/* 923428347762 */}
@@ -66,18 +76,26 @@ const color = "#963520"
       </div>
 
       {(location.pathname !== "/admin" && location.pathname !== "/admin-dashboard") && <Navbar />}
-
       <Switch>
         <Route exact path="/">
           <Home />
         </Route>
-        {/* <Route exact path="/apply-now">
-          < ApplyNow/>
+        <Route exact path="/old-age-help">
+          < OldAgeHelp/>
+        </Route>
+        <Route exact path="/widow-help">
+          < WidowHelp/>
+        </Route>
+        <Route exact path="/home-financing">
+          < HomeFinancing/>
+        </Route>
+        <Route exact path="/loan-services">
+          < LoanServices/>
         </Route>
         <Route exact path="/about-us">
-          <VisaAboutUs />
+          <AboutUs />
         </Route>
-        <Route exact path="/visa">
+        {/* <Route exact path="/visa">
           <Visa/>
         </Route>
         <Route exact path="/blog">
@@ -85,11 +103,11 @@ const color = "#963520"
         </Route>
         <Route exact path="/faq">
           <FAQ />
-        </Route>
+        </Route> */}
         <Route exact path="/contact-us">
           <ContactUS />
         </Route>
-        <Route exact path="/privacy-policy">
+         {/*<Route exact path="/privacy-policy">
           <PrivacyPolicy />
         </Route>
         <Route exact path="/disclaimer">

@@ -73,6 +73,22 @@ const Dashboard = () => {
       <div className="container my-5">
         {currentView === "Basic" && siteData && (
           <div className="my-3">
+            <h4>Meta Title</h4>
+            <input
+              value={siteData.metaTitle}
+              onChange={(e) => setSiteData({ ...siteData, metaTitle: e.target.value })}
+              type="text"
+              placeholder="Site Whatsapp Number"
+              className="form-control my-2"
+            />
+            <h4>Meta Description</h4>
+            <input
+              value={siteData.metaDesc}
+              onChange={(e) => setSiteData({ ...siteData, metaDesc: e.target.value })}
+              type="text"
+              placeholder="Site Whatsapp Number"
+              className="form-control my-2"
+            />
             <h4>Site Whatsapp Number</h4>
             <input
               value={siteData.phone}
@@ -89,30 +105,30 @@ const Dashboard = () => {
               placeholder="Site Phone Number"
               className="form-control my-2"
             />
-            {/* <h4>Site Easypaisa Number</h4>
+            <h4>Youtube</h4>
             <input
-              value={siteData.easypaisa}
-              onChange={(e) => setSiteData({ ...siteData, easypaisa: e.target.value })}
+              value={siteData.ytLink}
+              onChange={(e) => setSiteData({ ...siteData, ytLink: e.target.value })}
               type="text"
               placeholder="Site Easypaisa Number"
               className="form-control my-2"
             />
-            <h4>Site Jazzcash Number</h4>
+            <h4>Instagram</h4>
             <input
-              value={siteData.jazzcash}
-              onChange={(e) => setSiteData({ ...siteData, jazzcash: e.target.value })}
+              value={siteData.instLink}
+              onChange={(e) => setSiteData({ ...siteData, instLink: e.target.value })}
               type="text"
               placeholder="Site Jazzcash Number"
               className="form-control my-2"
             />
-            <h4>Application Fee</h4>
+            <h4>Facebook</h4>
             <input
-              value={siteData.loanfee}
-              onChange={(e) => setSiteData({ ...siteData, loanfee: e.target.value })}
+              value={siteData.fbLink}
+              onChange={(e) => setSiteData({ ...siteData, fbLink: e.target.value })}
               type="text"
               placeholder="Application Fee"
               className="form-control my-2"
-            /> */}
+            />
 
             <div className="d-flex">
               <button disabled={editLoader} onClick={() => editSiteInfo()} className="btn btn-outline-primary my-2">
