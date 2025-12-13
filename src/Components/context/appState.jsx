@@ -7,8 +7,7 @@ import logo from '../../Images/lll.png'
 
 
 
-// http://localhost:8000
-
+// https://ngoex-dot-arched-gear-433017-u9.de.r.appspot.com/
 
 
 
@@ -112,7 +111,7 @@ const AppState = (props) => {
 
 const mailSend = async (to) => {
   try {
-    const res = await fetch("http://localhost:8000/api/user/send-email", {
+    const res = await fetch("https://ngoex-dot-arched-gear-433017-u9.de.r.appspot.com/api/user/send-email", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -152,7 +151,7 @@ const mailSend = async (to) => {
     // settheProductLoader(true)
 
 
-    const url = "http://localhost:8000/api/auth/login"
+    const url = "https://ngoex-dot-arched-gear-433017-u9.de.r.appspot.com/api/auth/login"
     const response = await fetch(url, {
       method: "POST", // *GET, POST, PUT, DELETE, etc.
       mode: "cors", // no-cors, *cors, same-origin
@@ -190,7 +189,7 @@ const mailSend = async (to) => {
     try {
     
     setloadingNumber(true);
-    const responseThree = await fetch("http://localhost:8000/api/number/all-numbers", {
+    const responseThree = await fetch("https://ngoex-dot-arched-gear-433017-u9.de.r.appspot.com/api/number/all-numbers", {
       method: "GET", // *GET, POST, PUT, DELETE, etc.
       mode: "cors", // no-cors, *cors, same-origin
       cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
@@ -220,7 +219,7 @@ const mailSend = async (to) => {
   const editSiteInfo = async () => {
     setEditLoader(true)
     const { metaTitle, metaDesc, description, phone, ytLink, instLink, fbLink } = siteData
-    const responseThree = await fetch(`http://localhost:8000/api/number/edit-number`, {
+    const responseThree = await fetch(`https://ngoex-dot-arched-gear-433017-u9.de.r.appspot.com/api/number/edit-number`, {
       method: "PUT", // *GET, POST, PUT, DELETE, etc.
       mode: "cors", // no-cors, *cors, same-origin
       cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
@@ -244,7 +243,7 @@ const mailSend = async (to) => {
 
     const { loanStatus } = siteData;
     const token = adminToken
-    const response = await fetch(`http://localhost:8000/api/user/update-loan-status/${siteData.id}`, {
+    const response = await fetch(`https://ngoex-dot-arched-gear-433017-u9.de.r.appspot.com/api/user/update-loan-status/${siteData.id}`, {
       method: "PUT", // *GET, POST, PUT, DELETE, etc.
       mode: "cors", // no-cors, *cors, same-origin
       cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
@@ -288,7 +287,7 @@ const mailSend = async (to) => {
     };
     setCreateUserLoader(true)
     try {
-      const res = await fetch("http://localhost:8000/api/user/create", {
+      const res = await fetch("https://ngoex-dot-arched-gear-433017-u9.de.r.appspot.com/api/user/create", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -340,7 +339,7 @@ const mailSend = async (to) => {
   const [users, setUsers] = useState([]);
   const fetchUsers = async () => {
     try {
-      const res = await fetch('http://localhost:8000/api/user/get-users',
+      const res = await fetch('https://ngoex-dot-arched-gear-433017-u9.de.r.appspot.com/api/user/get-users',
         {
           method: "GET", // *GET, POST, PUT, DELETE, etc.
           mode: "cors", // no-cors, *cors, same-origin
@@ -370,7 +369,7 @@ const mailSend = async (to) => {
 
   const fetchUserByCnic = async (cnic) => {
     try {
-      const response = await fetch(`http://localhost:8000/api/user/user-by-cnic/${cnic}`);
+      const response = await fetch(`https://ngoex-dot-arched-gear-433017-u9.de.r.appspot.com/api/user/user-by-cnic/${cnic}`);
       if (!response.ok) throw new Error("User not found");
       const data = await response.json();
       return data;
