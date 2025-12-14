@@ -7,28 +7,30 @@ const OldAgeHelp = () => {
   return (
     <div className="container-fluid px-4 py-4" style={{ maxWidth: "1000px", margin: "0 auto" , fontSize:"22px"}}>
       <div className="text-center mb-5">
-        <h1 className="fw-bold mb-3">Travel Embassy Job Apply Services: Helping You Build a Brighter Future</h1>
+        <h1 className="fw-bold mb-3">Apna Ghar Support Services: Helping You Build a Brighter Future</h1>
         <p className="lead mx-auto" style={{ maxWidth: "900px" }}>
-        Travel Embassy empowers individuals, students, business owners, and families across Pakistan with tailored application solutions. With a simple process and clear terms, take confident steps toward your goals.
+        
+ Apna Ghar empowers individuals, students, business owners, and families across Pakistan with tailored application solutions. With a simple process and transparent guidance, take confident steps toward your goals.
+
         </p>
-          <h1 className="fw-bold mb-3">What We Offer to Our Customers:</h1>
+          <h1 className="fw-bold mb-3">What We Offer:</h1>
       </div>
 
       {/* Personal Applications Section */}
       <div className="row mb-5 align-items-center">
         <div className="col-lg-7 col-md-6">
-          <h2 className="fw-bold mb-3">1. Personal Applications: Achieve Your Life Goals</h2>
+          <h2 className="fw-bold mb-3">1.  Personal Applications: Achieve Your Life Goals</h2>
           <p>
-           Personal Job Apply from Travel Embassy supports urgent needs — from medical to family events or projects.
+           Apna Ghar’s personal support helps meet urgent needs—whether for medical emergencies, family events, or life projects.
 
 
           </p>
           <ul>
-            <li>Easy Eligibility: Simple and clear requirements make applying straightforward for everyone.</li>
-            <li>Flexible Repayments: Plans are designed to match your budget, so payments remain manageable.</li>
-            <li>Fast Approval: Quick processing ensures you receive funds when you need them most.</li>
+            <li>Easy Eligibility: Clear, simple requirements make applying straightforward for everyone.</li>
+            <li>Flexible Repayments: Plans are designed to match your budget.</li>
+            <li>Fast Approval: Quick processing ensures timely access to support.</li>
           </ul>
-          <p>Thousands of people have used personal applications to secure their future and meet urgent needs.</p>
+          <p>Thousands of people have used personal applications to secure their future and meet urgent needs, including old age benefits for seniors and old age home support for those in need.Thousands of people have used personal applications to secure their future and meet urgent needs, including old age benefits for seniors and old age home support for those in need.</p>
         </div>
         <div className="col-lg-5 col-md-6 text-center"
                 >
@@ -55,15 +57,15 @@ const OldAgeHelp = () => {
         <div className="col-lg-7 col-md-6">
           <h2 className="fw-bold mb-3">2. Business Applications: Empowering Entrepreneurs</h2>
           <p>
-          Travel Embassy supports businesses to start, expand, or invest in new resources. Whether your venture is in technology, retail, or any other industry, this process supports long-term growth.
+          We support businesses to start, expand, or invest in new resources. From technology to retail, our applications help entrepreneurs grow with confidence.
           </p>
           <ul>
-            <li><b>Support for Various Goals:</b> Funding options cover both short-term and long-term business needs.</li>
-            <li><b>Transparent Terms:</b> No extra costs or hidden charges.</li>
-            <li><b>Accessible for Many Industries:</b> Applications available for a wide range of businesses, from tech startups to retail stores.</li>
+            <li><b>Support for Various Goals:</b> Funding options cover short-term and long-term business needs.</li>
+            <li><b>Transparent Terms:</b> No hidden costs.</li>
+            <li><b>Accessible for Many Industries:</b> Ideal for startups, retail, and beyond.</li>
           </ul>
           <p>
-          These applications allow entrepreneurs to focus on growth and building a strong business.
+          These applications allow business owners to focus on growth while accessing reliable support, including schemes similar to employees old age benefits institution programs that protect long-term stability.
           </p>
         </div>
         
@@ -74,15 +76,16 @@ const OldAgeHelp = () => {
         <div className="col-lg-7 col-md-6">
           <h2 className="fw-bold mb-3">3. Student Applications: Investing in Your Future</h2>
           <p>
-       Education transforms lives. Travel Embassy’s student Job Apply helps with tuition, books, and living expenses so you can focus on studies.
+       Education transforms lives. Apna Ghar helps students cover tuition, books, and living expenses so they can focus on studies.
           </p>
           <ul>
-            <li><b>Comprehensive Support:</b> Applications can cover all or part of your educational expenses.</li>
-            <li><b>Interest-Free:</b> No added financial burden, making it easier to pursue your goals.</li>
-            <li><b>Flexible Repayment:</b> Repayments begin after graduation to allow you to establish your career first.</li>
+            <li><b>Comprehensive Support:</b> Covers all or part of educational expenses.</li>
+            <li><b>Interest-Free:</b> No added financial burden.
+</li>
+            <li><b>Flexible Repayment:</b> Begin repayments after graduation.</li>
           </ul>
           <p>
-       These applications give students the chance to pursue their dreams and build a successful future.
+       Our student applications provide opportunities to pursue dreams and secure a successful future.
           </p>
         </div>
 
@@ -111,17 +114,20 @@ const OldAgeHelp = () => {
         <div className="col-lg-7 col-md-6">
           <h2 className="fw-bold mb-3">4. Home Applications: Making Your Dream Home a Reality</h2>
           <p>
-           Owning a home is one of life’s biggest milestones. Travel Embassy supports home Job Apply to make buying or renovating a house accessible and stress-free.
+            Owning a home is a life milestone. Apna Ghar supports applications for purchasing or renovating homes, making it accessible and stress-free.
           </p>
           <ul>
-            <li>Multiple Options: Applications for purchasing new homes or improving existing ones.</li>
+            <li>Multiple Options: Purchase new homes or improve existing ones</li>
             <li>Simple Process: Minimal paperwork and fast approvals.</li>
-            <li>Affordable Repayment: Flexible plans that make homeownership truly achievable.</li>
+            <li>Affordable Repayment: Flexible plans make homeownership achievable.</li>
           </ul>
           <p>
            
 
-Thousands of families have turned their dream of owning a home into reality with Travel Embassy’s Job Apply support.
+
+
+Thousands of families have turned their dream of owning a home into reality with Apna Ghar’s support, while also benefiting from programs like old age benefits that protect families’ long-term stability.
+
 
           </p>
         </div>

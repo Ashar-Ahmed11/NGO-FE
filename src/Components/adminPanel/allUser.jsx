@@ -105,10 +105,9 @@ const AllUser = () => {
             <tr className='h4'>
               <th scope="col">#</th>
               <th scope="col">Name</th>
-              <th scope="col">Job</th>
+              <th scope="col">Service</th>
               <th scope="col">Phone</th>
-              <th scope="col">Status</th>
-              <th scope="col">Action</th>
+              {/* <th scope="col">Action</th> */}
             </tr>
           </thead>
           <tbody>
@@ -118,15 +117,15 @@ const AllUser = () => {
                 <td className='h4'>{user.firstName} {user.lastName}</td>
                 <td className='h4'>{user.job}</td>
                 <td className='h4'>{user.phoneNumber}</td>
-                <td className='h4'>{savedStatuses[user._id] || user.status}</td>
-                <td>
+                {/* <td className='h4'>{savedStatuses[user._id] || user.status}</td> */}
+                {/* <td>
                   <button className="btn btn-primary" onClick={(e) => {
                     e.stopPropagation();
                     openModal1(user._id)
                   }}>
                     Update Status
                   </button>
-                </td>
+                </td> */}
               </tr>
             ))}
           </tbody>
@@ -159,7 +158,7 @@ const AllUser = () => {
       </div> */}
 
       {/* Status update modal */}
-      <div
+      {/* <div
         className="modal fade"
         id="loanStatusModal"
         tabIndex="-1"
@@ -216,7 +215,7 @@ const AllUser = () => {
 
           </div>
         </div>
-      </div>
+      </div> */}
 
 
 
@@ -235,11 +234,12 @@ const AllUser = () => {
                 <p ><strong>Name:</strong> {selectedUser.firstName} {selectedUser.lastName}</p>
                 <p><strong>Email:</strong> {selectedUser.email}</p>
                 <p><strong>WhatsApp No:</strong> {selectedUser.phoneNumber}</p>
-                <p><strong>CNIC Number:</strong> {selectedUser.cnicNumber}</p>
+                {/* <p><strong>CNIC Number:</strong> {selectedUser.cnicNumber}</p> */}
                 <p><strong>Job:</strong> {selectedUser.job}</p>
                 <p><strong>Country:</strong> {selectedUser.country}</p>
-                <p><strong>Address:</strong> {selectedUser.address}</p>
-                <div className='my-5'>
+                <p><strong>City:</strong> {selectedUser.city}</p>
+                {/* <p><strong>Address:</strong> {selectedUser.address}</p> */}
+                {/* <div className='my-5'>
                   <p><strong>Passport Size Photo:</strong><br />
                     <img className='card-img-top' src={selectedUser.passportSizePhotoImage} alt="Passport Size Photo" width={200} />
                   </p>
@@ -255,7 +255,7 @@ const AllUser = () => {
                   <p><strong>Passport Back:</strong><br />
                     <img className='card-img-top' src={selectedUser.passportBackImage} alt="Passport Back" width={200} />
                   </p>
-                </div>
+                </div> */}
               </div>
               <div className="modal-footer">
                 <button className="btn btn-secondary" onClick={() => setShowModal(false)}>Close</button>

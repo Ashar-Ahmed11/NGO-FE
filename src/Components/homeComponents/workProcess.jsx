@@ -7,9 +7,9 @@ const WorkProcess = () => {
         <p className="text-warning mb-2" style={{borderLeft: '3px solid #963520', paddingLeft: '10px', display: 'inline-block'}}>
           Support Process
         </p>
-        <h2 className="fw-bold mb-3">Our Support Process at Apna Ghar</h2>
+        <h2 className="fw-bold mb-3">How Apna Ghar Supports You</h2>
         <p className="text-muted">
-          Get compassionate, transparent help with clear steps and timely updates.
+          Experience compassionate, transparent assistance with clear steps and timely updates every step of the way.
         </p>
       </div>
 
@@ -24,9 +24,10 @@ const WorkProcess = () => {
                 style={{width: '100px', height: '100px', objectFit: 'contain'}}
               />
             </div>
-            <h5 className="fw-bold mb-3">Personalized Guidance for Your Support Request</h5>
+            <h5 className="fw-bold mb-3">Personalized Guidance</h5>
             <p className="text-muted small">
-              "Get tailored advice from our team to apply with confidence and clarity."
+              Get advice tailored to your support request. Our team helps you apply with confidence and clarity.
+
             </p>
           </div>
         </div>
@@ -41,9 +42,9 @@ const WorkProcess = () => {
                 style={{width: '100px', height: '100px', objectFit: 'contain'}}
               />
             </div>
-            <h5 className="fw-bold mb-3">Quick Verification and Status Updates</h5>
+            <h5 className="fw-bold mb-3">Fast Verification</h5>
             <p className="text-muted small">
-              "We verify details promptly and keep you updated at every step to avoid delays."
+              We verify your details quickly and provide real-time updates so your application moves forward without delays.
             </p>
           </div>
         </div>
@@ -58,9 +59,9 @@ const WorkProcess = () => {
                 style={{width: '100px', height: '100px', objectFit: 'contain'}}
               />
             </div>
-            <h5 className="fw-bold mb-3">Fair and Transparent Process</h5>
+            <h5 className="fw-bold mb-3">Clear and Fair Process</h5>
             <p className="text-muted small">
-              "Clear criteria, simple documentation, and zero hidden costs—support with dignity."
+              Enjoy a simple, transparent process with easy documentation, clear criteria, and no hidden costs by providing you support that respects your dignity.
             </p>
           </div>
         </div>
@@ -75,9 +76,9 @@ const WorkProcess = () => {
                 style={{width: '100px', height: '100px', objectFit: 'contain'}}
               />
             </div>
-            <h5 className="fw-bold mb-3">Trusted Community Impact</h5>
+            <h5 className="fw-bold mb-3">Trusted Impact</h5>
             <p className="text-muted small">
-              "Join thousands of families who trust Apna Ghar for timely, compassionate support."
+              Join thousands of families who rely on Apna Ghar for timely, caring support that truly makes a difference.
             </p>
           </div>
         </div>

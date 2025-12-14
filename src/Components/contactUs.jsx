@@ -17,61 +17,44 @@ const ContactUs = () => {
         <div className={`${isMobile ? "col-12" : "col-lg-9"}`}>
           <main className="py-4 px-md-4 px-2 bg-light">
             <article className="bg-white shadow-sm rounded p-4 p-md-5">
-              <h1 className="fw-bold mb-4">Reach Out and Let Us Guide You</h1>
+              
+              <h1 className="fw-bold mb-4">Contact Us – We’re Here to Help</h1>
 
               <p className="mb-4">
-                At Travel Embassy Job Apply, we believe that every application
-                journey deserves care, attention, and clarity. Whether you’re
-                exploring your first application, managing your ongoing status, or
-                just learning about our services, our team is here to guide you
-                every step of the way. Your questions matter, and your
-                satisfaction is our mission.
+                At Apna Ghar, every application journey matters. Whether you’re applying for personal support, business assistance, student funding, or home financing, our team is ready to guide you with care, clarity, and attention. Your questions matter, and we’re here to make the process smooth and stress-free.
               </p>
 
-              <p className="mb-4">
-                We understand that financial decisions can be stressful. That’s
-                why we promise prompt responses and dedicated support to make
-                your experience smooth, stress-free, and empowering.
-              </p>
-
-              <h2 className="fw-bold mt-5 mb-4">We’re Here Whenever You Need Us</h2>
+              <h2 className="fw-bold mt-5 mb-4">How to Reach Us</h2>
 
               <div className="contact-methods">
                 <div className="contact-method mb-4">
-                  <h3 className="fw-bold">1. Send Us a Message and Connect Instantly</h3>
+                  <h3 className="fw-bold">1. Send Us a Message</h3>
                   <p>
-                    Have a question or need assistance? Send an email to our
-                    customer support team, and we’ll get back to you within 24
-                    hours. From application guidance to clarifying options,
-                    we’re ready to provide clear, helpful answers.
+                    Have a question or need guidance? Email our customer support team, and we’ll respond within 24 hours. From application help to clarifying your options, we provide clear, helpful answers.
                   </p>
                 </div>
 
                 <div className="contact-method mb-4">
-                  <h3 className="fw-bold">2. Talk to a Friendly Voice</h3>
+                  <h3 className="fw-bold">2. Speak to a Friendly Voice</h3>
                   <p>
-                    Sometimes, it’s easier to speak to someone directly. Call
-                    our customer service line from 9 AM to 6 PM, Monday to
-                    Friday, Pakistan Standard Time. Our experts are happy to
-                    answer your questions about eligibility, progress, or
-                    any concerns you may have.
+                    Sometimes it’s easier to talk directly. Call us Monday to Friday, 9 AM to 6 PM (Pakistan Standard Time). Our experts are happy to assist with eligibility, application status, or any concerns you have.
                   </p>
                 </div>
 
                 <div className="contact-method mb-4">
-                  <h3 className="fw-bold">3. Visit Us and Experience Personalised Support</h3>
+                  <h3 className="fw-bold">3. Visit Our Office</h3>
                   <p>
-                    If you prefer face-to-face guidance, our office near
-                    Islamabad welcomes you. Meet one of our specialists in
-                    person, get personalised advice, and discover solutions
-                    designed for your unique needs.
+                    Prefer face-to-face support? Our Islamabad office welcomes you. Meet a specialist, get personalized guidance, and explore solutions tailored to your needs.
                   </p>
                 </div>
               </div>
 
               <div className="office-address mb-4">
-                <h2 className="fw-bold">Office Address: Travel Embassy</h2>
-                <p>F-6, Islamabad, Islamabad Capital Territory, Pakistan</p>
+                <h2 className="fw-bold">Office Address</h2>
+                <p>
+                  <b>Apna Ghar</b><br />
+                  F-6, Islamabad, Islamabad Capital Territory, Pakistan
+                </p>
               </div>
 
               <div className="map-container mb-4 text-center p-5">
@@ -85,12 +68,10 @@ const ContactUs = () => {
               <div className="quote-section mb-4">
                 <h3 className="fw-bold">Your Questions, Our Commitment</h3>
                 <p>
-                  Every message, call, or visit is an opportunity for us to help
-                  you move closer to your goals. At Travel Embassy Job Apply, we
-                  don’t just process applications; we provide guidance, clarity, and
-                  support to make your dreams achievable.
+                  Every message, call, or visit is an opportunity for us to help you move closer to your goals. At Apna Ghar, we don’t just process applications—we provide guidance, clarity, and support to help you move forward with confidence.
                 </p>
               </div>
+
             </article>
           </main>
         </div>

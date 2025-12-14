@@ -23,10 +23,10 @@ const WhyChooseAkhuwat = () => {
         <div className="row align-items-center">
           <div className="col-lg-5">
             <h2 className="fw-bold mb-4 display-5">
-            Why Apna Ghar Is the Right Choice for You
+            Why Apna Ghar Stands Out as Your Ideal Choice
             </h2>
             <p>
-           At Apna Ghar, support is simple, fast, and transparent. We’re here for seniors, widows, and families—whether it’s home financing or interest‑free loans. Apply online in minutes or visit your nearest centre.
+           Apna Ghar is a helping hands NGO built on trust and care. We proudly stand as an NGO helping the poor by providing financial help from an NGO for seniors, widows, and families, along with support for education and medical treatment by providing interest-free loans. From help NGO Karachi to families seeking hope beyond borders, our hands for help NGO make support easy and accessible. Apply online in minutes or visit your nearest centre and take the first step toward dignity, stability, and a better future.
 
             </p>
           </div>

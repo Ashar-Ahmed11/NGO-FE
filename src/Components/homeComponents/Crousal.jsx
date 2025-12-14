@@ -137,12 +137,11 @@ const Crousal = () => {
               className={`${isMobile ? 'fw-bold display-4' : 'display-5 fw-bold '} `}
               style={{ color: 'white' }}
             >
-              Apna Ghar — Compassion with Action
+              Apna Ghar – A True Home of Hope, Care, and Opportunity
             </h1>
 
             <p className="text-light ">
-              Old Age Help, Widow Help, Home Financing, and Loan Services. 
-              Simple, transparent, and timely support for families.
+              Old age support, widow care, education assistance, and medical help are provided with compassion, transparency, and timely care for families in need.
             </p>
           </div>
 

@@ -22,8 +22,8 @@ const JobCategories = () => {
   return (
     <div className="container py-5">
       <div className="text-center mb-5">
-        <h2 className="fw-bold">NGO Services</h2>
-        <p className="text-muted">Support for seniors, widows, home financing, and loan services.</p>
+        <h2 className="fw-bold">Our NGO Services</h2>
+        <p className="text-muted">Caring support for seniors, widows, housing needs, and financial assistance to help families live with dignity and hope.</p>
       </div>
 
       <div className="row g-4">
@@ -37,8 +37,8 @@ const JobCategories = () => {
               style={{height: '200px', objectFit: 'cover'}}
             />
             <div className="card-body text-center">
-              <h5 className="card-title fw-bold mb-3">Old Age Help</h5>
-              <p className="text-muted small">Care, essentials, and dignity for senior citizens.</p>
+              <h5 className="card-title fw-bold mb-3">Old Age Support</h5>
+              <p className="text-muted small">Compassionate care , and respect that help senior citizens live with comfort and dignity.</p>
               <button className="btn px-4 mt-3" style={{backgroundColor:'#963520', color: 'white'}} onClick={() => handleApply('Old Age Help')}>Get Support</button>
             </div>
           </div>
@@ -54,8 +54,8 @@ const JobCategories = () => {
               style={{height: '200px', objectFit: 'cover'}}
             />
             <div className="card-body text-center">
-              <h5 className="card-title fw-bold mb-3">Widow Help</h5>
-              <p className="text-muted small">Monthly aid and emergency assistance for widows.</p>
+              <h5 className="card-title fw-bold mb-3">Widow Support</h5>
+              <p className="text-muted small"> Reliable monthly assistance and timely emergency help to bring stability, care, and hope to widows in need.</p>
               <button className="btn px-4 mt-3" style={{backgroundColor:'#963520', color: 'white'}} onClick={() => handleApply('Widow Help')}>Get Support</button>
             </div>
           </div>
@@ -71,8 +71,8 @@ const JobCategories = () => {
               style={{height: '200px', objectFit: 'cover'}}
             />
             <div className="card-body text-center">
-              <h5 className="card-title fw-bold mb-3">Home Financing</h5>
-              <p className="text-muted small">Support for building, rent, or essential home needs.</p>
+              <h5 className="card-title fw-bold mb-3">Home Support</h5>
+              <p className="text-muted small">Assistance for building a home, managing rent, and meeting essential household needs with dignity and care.</p>
               <button className="btn px-4 mt-3" style={{backgroundColor:'#963520', color: 'white'}} onClick={() => handleApply('Home Financing')}>Get Support</button>
             </div>
           </div>
@@ -88,8 +88,8 @@ const JobCategories = () => {
               style={{height: '200px', objectFit: 'cover'}}
             />
             <div className="card-body text-center">
-              <h5 className="card-title fw-bold mb-3">Loan Services</h5>
-              <p className="text-muted small">Interest‑free microloans for urgent and family needs.</p>
+              <h5 className="card-title fw-bold mb-3">Loan Support</h5>
+              <p className="text-muted small">Interest free microloans to help families manage urgent needs and move toward stability.</p>
               <button className="btn px-4 mt-3" style={{backgroundColor:'#963520', color: 'white'}} onClick={() => handleApply('Loan Services')}>Get Support</button>
             </div>
           </div>

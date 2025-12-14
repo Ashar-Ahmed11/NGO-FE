@@ -33,6 +33,9 @@ const ApplyLoanForm = () => {
 
   // const color = "#108515"
 
+useEffect(() => {
+  console.log(userData)
+}, [userData])
 
   const color = "#963520"
 
@@ -81,7 +84,48 @@ const ApplyLoanForm = () => {
                 />
               </div>
 
+              
               <div className="mb-3">
+                <input
+                  value={userData.lastName}
+                  onChange={(e) => setUserData({ ...userData, lastName: e.target.value })}
+                  disabled={createUserLoader}
+                  type="text"
+                  className="form-control"
+                  placeholder="Enter Your Last Name"
+                />
+              </div>
+              <div className="mb-3">
+                <div className="position-relative">
+                  <input
+                    value={userData.country}
+                    onChange={(e) => setUserData({ ...userData, country: e.target.value })}
+                    disabled={createUserLoader}
+                    placeholder="Country"
+                    className="form-control"
+                    style={{ appearance: 'none', WebkitAppearance: 'none', MozAppearance: 'none', paddingRight: '2.5rem' }}
+                  >
+                   
+                  </input>
+                  {/* <span className="fa fa-chevron-down" style={{ position: 'absolute', right: '12px', top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none', color: '#666' }}></span> */}
+                </div>
+              </div>
+              <div className="mb-3">
+                <div className="position-relative">
+                  <input
+                    value={userData.city}
+                    onChange={(e) => setUserData({ ...userData, city: e.target.value })}
+                    disabled={createUserLoader}
+                    placeholder="City"
+                    className="form-control"
+                    style={{ appearance: 'none', WebkitAppearance: 'none', MozAppearance: 'none', paddingRight: '2.5rem' }}
+                  >
+                   
+                  </input>
+                  {/* <span className="fa fa-chevron-down" style={{ position: 'absolute', right: '12px', top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none', color: '#666' }}></span> */}
+                </div>
+              </div>
+              {/* <div className="mb-3">
                 <div className="position-relative">
                   <select
                     value={userData.country}
@@ -99,17 +143,7 @@ const ApplyLoanForm = () => {
                   </select>
                   <span className="fa fa-chevron-down" style={{ position: 'absolute', right: '12px', top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none', color: '#666' }}></span>
                 </div>
-              </div>
-              <div className="mb-3">
-                <input
-                  value={userData.lastName}
-                  onChange={(e) => setUserData({ ...userData, lastName: e.target.value })}
-                  disabled={createUserLoader}
-                  type="text"
-                  className="form-control"
-                  placeholder="Enter Your Last Name"
-                />
-              </div>
+              </div> */}
               <div className="mb-3">
                 <div className="position-relative">
                   <select
@@ -150,7 +184,7 @@ const ApplyLoanForm = () => {
                   placeholder="Whatsapp No"
                 />
               </div>
-              <div className="mb-3">
+              {/* <div className="mb-3">
                 <input
                   value={userData.cnicNumber}
                   onChange={(e) => setUserData({ ...userData, cnicNumber: e.target.value })}
@@ -169,7 +203,7 @@ const ApplyLoanForm = () => {
                   className="form-control"
                   placeholder="Address"
                 />
-              </div>
+              </div> */}
               {/* Removed amount and bank inputs for Job Apply */}
               {/* <div className="mb-3">
                 <div className="select-wrapper">
@@ -217,7 +251,7 @@ const ApplyLoanForm = () => {
                 </div>
               </div>} */}
 
-              <label for="basic-url" class="form-label">Front CNIC Image</label>
+              {/* <label for="basic-url" class="form-label">Front CNIC Image</label>
               <div className="input-group mb-3">
                 <input
                   type="file"
@@ -287,7 +321,7 @@ const ApplyLoanForm = () => {
                   <div className="spinner-border text-primary" role="status" />
                   <span className="ms-2">Uploading image...</span>
                 </div>
-              )}
+              )} */}
 
               {/* {siteData ? <div>
                 <div className="d-flex justify-content-between p-2 border-success border border-2 rounded-3 align-items-center my-2">

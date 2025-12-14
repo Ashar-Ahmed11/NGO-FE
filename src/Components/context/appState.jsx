@@ -7,7 +7,7 @@ import logo from '../../Images/lll.png'
 
 
 
-// https://ngoex-dot-arched-gear-433017-u9.de.r.appspot.com/
+//https://ngoex-dot-arched-gear-433017-u9.de.r.appspot.com
 
 
 
@@ -20,47 +20,91 @@ const AppState = (props) => {
   const [userData, setUserData] = useState({
     firstName: "",
     lastName: "",
-    jobTitle:"",
     job: "",
     country: "",
+    city: "",
     email: "",
     phoneNumber: "",
-    cnicNumber: "",
-    address: "",
-    status: "Pending", // default
-    loanAmount: "",
-    bankAccountNumber: "",
-    bankName: "",
-    paymentScreenshot: "", // will be filled after upload
-    frontCnic: "", // will be filled after upload
-    backCnic: "", // will be filled after upload
-    utilityBill: "", // will be filled after upload
-    passportFrontImage: "",
-    passportBackImage: "",
-    passportSizePhotoImage: ""
+    
   });
 
+
+     // <img 
+      //   src="https://travelsembassy.com/static/media/lll.d1eef96eae94ff83ad79.png"
+      //   style="width:110px; max-width:100%;"
+      //   alt="Travel Embassy"
+      // />
+
+
+       // <p style="font-size:16px;">
+      //   Dear <b>${userData.firstName} ${userData.lastName}</b>,
+      // </p>
+
+      // <p style="font-size:15px;">
+      //   Thank you for submitting your application. Below are the details we have received:
+      // </p>
 
 
   const subject = "Subject: Application Successfully Submitted";
   const text = `
-<div style="background-color:#ffffff; padding:30px; text-align:center;">
-  
-  <!-- IMAGE WRAPPER WITH WHITE BACKGROUND -->
-  <div style="background:#ffffff; padding:20px; display:inline-block; border-radius:10px;">
-    <img 
-      src="https://travelsembassy.com/static/media/lll.d1eef96eae94ff83ad79.png"
-      style="width:120px; max-width:100%; display:block; margin:0 auto;"
-    />
+<div style="background-color:#f5f5f5; padding:30px; font-family:Arial, sans-serif;">
+  <div style="max-width:600px; margin:0 auto; background:#ffffff; border-radius:10px; overflow:hidden;">
+
+    <!-- Header -->
+    <div style="background:#963520; padding:20px; text-align:center;">
+   
+      <h2 style="color:#ffffff; margin:15px 0 0;">
+        Application Submitted Successfully
+      </h2>
+    </div>
+
+    <!-- Body -->
+    <div style="padding:25px; color:#333;">
+     
+      <table style="width:100%; border-collapse:collapse; margin-top:20px;">
+        <tr>
+          <td style="padding:10px; border-bottom:1px solid #eee;"><b>Full Name</b></td>
+          <td style="padding:10px; border-bottom:1px solid #eee;">
+            ${userData.firstName} ${userData.lastName}
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:10px; border-bottom:1px solid #eee;"><b>Email</b></td>
+          <td style="padding:10px; border-bottom:1px solid #eee;">${userData.email}</td>
+        </tr>
+        <tr>
+          <td style="padding:10px; border-bottom:1px solid #eee;"><b>Phone</b></td>
+          <td style="padding:10px; border-bottom:1px solid #eee;">${userData.phoneNumber}</td>
+        </tr>
+        <tr>
+          <td style="padding:10px; border-bottom:1px solid #eee;"><b>Service</b></td>
+          <td style="padding:10px; border-bottom:1px solid #eee;">${userData.job}</td>
+        </tr>
+        <tr>
+          <td style="padding:10px; border-bottom:1px solid #eee;"><b>City</b></td>
+          <td style="padding:10px; border-bottom:1px solid #eee;">${userData.city}</td>
+        </tr>
+        <tr>
+          <td style="padding:10px;"><b>Country</b></td>
+          <td style="padding:10px;">${userData.country}</td>
+        </tr>
+      </table>
+
+      <p style="margin-top:25px; font-size:15px;">
+        Our team will review your application and contact you shortly.
+      </p>
+
+      <p style="font-size:15px;">
+        Thank you for choosing <b>Apna Ghar</b>.
+      </p>
+    </div>
+
+    <!-- Footer -->
+    <div style="background:#f1f1f1; padding:15px; text-align:center; font-size:13px; color:#666;">
+      © ${new Date().getFullYear()} Apna Ghar. All rights reserved.
+    </div>
+
   </div>
-
-  <h1 style="color:#FF7729; text-align:center; margin-top:20px;">
-    ${userData.firstName}, Thanks for your application
-  </h1>
-
-  <h3 style="padding:5px; color:black;">
-    Our team will shortly get back to you
-  </h3>
 </div>
 `;
 
@@ -111,7 +155,7 @@ const AppState = (props) => {
 
 const mailSend = async (to) => {
   try {
-    const res = await fetch("https://ngoex-dot-arched-gear-433017-u9.de.r.appspot.com/api/user/send-email", {
+    const res = await fetch("http://localhost:8000/api/user/send-email", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -151,7 +195,7 @@ const mailSend = async (to) => {
     // settheProductLoader(true)
 
 
-    const url = "https://ngoex-dot-arched-gear-433017-u9.de.r.appspot.com/api/auth/login"
+    const url = "http://localhost:8000/api/auth/login"
     const response = await fetch(url, {
       method: "POST", // *GET, POST, PUT, DELETE, etc.
       mode: "cors", // no-cors, *cors, same-origin
@@ -189,7 +233,7 @@ const mailSend = async (to) => {
     try {
     
     setloadingNumber(true);
-    const responseThree = await fetch("https://ngoex-dot-arched-gear-433017-u9.de.r.appspot.com/api/number/all-numbers", {
+    const responseThree = await fetch("http://localhost:8000/api/number/all-numbers", {
       method: "GET", // *GET, POST, PUT, DELETE, etc.
       mode: "cors", // no-cors, *cors, same-origin
       cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
@@ -219,7 +263,7 @@ const mailSend = async (to) => {
   const editSiteInfo = async () => {
     setEditLoader(true)
     const { metaTitle, metaDesc, description, phone, ytLink, instLink, fbLink } = siteData
-    const responseThree = await fetch(`https://ngoex-dot-arched-gear-433017-u9.de.r.appspot.com/api/number/edit-number`, {
+    const responseThree = await fetch(`http://localhost:8000/api/number/edit-number`, {
       method: "PUT", // *GET, POST, PUT, DELETE, etc.
       mode: "cors", // no-cors, *cors, same-origin
       cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
@@ -243,7 +287,7 @@ const mailSend = async (to) => {
 
     const { loanStatus } = siteData;
     const token = adminToken
-    const response = await fetch(`https://ngoex-dot-arched-gear-433017-u9.de.r.appspot.com/api/user/update-loan-status/${siteData.id}`, {
+    const response = await fetch(`http://localhost:8000/api/user/update-loan-status/${siteData.id}`, {
       method: "PUT", // *GET, POST, PUT, DELETE, etc.
       mode: "cors", // no-cors, *cors, same-origin
       cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
@@ -275,19 +319,12 @@ const mailSend = async (to) => {
       email: userData.email,
       job: userData.job || userData.jobTitle,
       country: userData.country,
+      city: userData.city,
       phoneNumber: userData.phoneNumber,
-      address: userData.address,
-      cnicNumber: userData.cnicNumber,
-      status: userData.status || "Pending",
-      passportFrontImage: userData.passportFrontImage,
-      passportBackImage: userData.passportBackImage,
-      frontCnic: userData.frontCnic,
-      backCnic: userData.backCnic,
-      passportSizePhotoImage: userData.passportSizePhotoImage
     };
     setCreateUserLoader(true)
     try {
-      const res = await fetch("https://ngoex-dot-arched-gear-433017-u9.de.r.appspot.com/api/user/create", {
+      const res = await fetch("http://localhost:8000/api/user/create", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -305,27 +342,15 @@ const mailSend = async (to) => {
       setUserData({
         firstName: "",
         lastName: "",
-        jobTitle: "",
         job: "",
         country: "",
+        city: "",
         email: "",
         phoneNumber: "",
-        cnicNumber: "",
-        address: "",
-        status: "Pending", // default
-        loanAmount: "",
-        bankName: "",
-        bankAccountNumber: "",
-        paymentScreenshot: "", // will be filled after upload
-        frontCnic: "",
-        backCnic: "",
-        utilityBill: "",
-        passportFrontImage: "",
-        passportBackImage: "",
-        passportSizePhotoImage: ""
+       
       })
       setImgUrl("")
-      inputRef.current.value = ""
+      // inputRef.current.value = ""
 
     } catch (err) {
       console.error("Error:", err.message);
@@ -339,7 +364,7 @@ const mailSend = async (to) => {
   const [users, setUsers] = useState([]);
   const fetchUsers = async () => {
     try {
-      const res = await fetch('https://ngoex-dot-arched-gear-433017-u9.de.r.appspot.com/api/user/get-users',
+      const res = await fetch('http://localhost:8000/api/user/get-users',
         {
           method: "GET", // *GET, POST, PUT, DELETE, etc.
           mode: "cors", // no-cors, *cors, same-origin
@@ -369,7 +394,7 @@ const mailSend = async (to) => {
 
   const fetchUserByCnic = async (cnic) => {
     try {
-      const response = await fetch(`https://ngoex-dot-arched-gear-433017-u9.de.r.appspot.com/api/user/user-by-cnic/${cnic}`);
+      const response = await fetch(`http://localhost:8000/api/user/user-by-cnic/${cnic}`);
       if (!response.ok) throw new Error("User not found");
       const data = await response.json();
       return data;

@@ -23,8 +23,8 @@ const Home = () => {
     
     <div>
       <Crousal />
+      <ApplyLoanForm/>
       <JobCategories/>
-      {/* <ApplyLoanForm/> */}
       <StatsCards />
       <AkhuwatImages2 />
       {/* <WithDraw/> */}
