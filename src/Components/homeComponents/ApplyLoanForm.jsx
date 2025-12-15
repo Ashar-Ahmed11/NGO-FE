@@ -33,9 +33,9 @@ const ApplyLoanForm = () => {
 
   // const color = "#108515"
 
-useEffect(() => {
-  console.log(userData)
-}, [userData])
+  useEffect(() => {
+    console.log(userData)
+  }, [userData])
 
   const color = "#963520"
 
@@ -84,7 +84,7 @@ useEffect(() => {
                 />
               </div>
 
-              
+
               <div className="mb-3">
                 <input
                   value={userData.lastName}
@@ -93,6 +93,18 @@ useEffect(() => {
                   type="text"
                   className="form-control"
                   placeholder="Enter Your Last Name"
+                />
+              </div>
+
+              <div className="mb-3">
+                <input
+                  value={userData.age}
+                  onChange={(e) => setUserData({ ...userData, age: e.target.value })}
+                  disabled={createUserLoader}
+                  type="number"
+                  className="form-control"
+                  placeholder="Age"
+                  min="1"
                 />
               </div>
               <div className="mb-3">
@@ -105,7 +117,7 @@ useEffect(() => {
                     className="form-control"
                     style={{ appearance: 'none', WebkitAppearance: 'none', MozAppearance: 'none', paddingRight: '2.5rem' }}
                   >
-                   
+
                   </input>
                   {/* <span className="fa fa-chevron-down" style={{ position: 'absolute', right: '12px', top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none', color: '#666' }}></span> */}
                 </div>
@@ -120,10 +132,21 @@ useEffect(() => {
                     className="form-control"
                     style={{ appearance: 'none', WebkitAppearance: 'none', MozAppearance: 'none', paddingRight: '2.5rem' }}
                   >
-                   
+
                   </input>
                   {/* <span className="fa fa-chevron-down" style={{ position: 'absolute', right: '12px', top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none', color: '#666' }}></span> */}
                 </div>
+              </div>
+
+              <div className="mb-3">
+                <input
+                  value={userData.currentAddress}
+                  onChange={(e) => setUserData({ ...userData, currentAddress: e.target.value })}
+                  disabled={createUserLoader}
+                  type="text"
+                  className="form-control"
+                  placeholder="Current Address"
+                />
               </div>
               {/* <div className="mb-3">
                 <div className="position-relative">
@@ -184,6 +207,7 @@ useEffect(() => {
                   placeholder="Whatsapp No"
                 />
               </div>
+
               {/* <div className="mb-3">
                 <input
                   value={userData.cnicNumber}

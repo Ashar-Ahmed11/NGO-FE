@@ -17,6 +17,19 @@ const AllUser = () => {
   const [showModal, setShowModal] = useState(false);
   const [loadingUsers, setLoadingUsers] = useState(true);
 
+  const formatDate = (value) => {
+    const dt = new Date(value);
+    if (isNaN(dt)) return "";
+    const hours24 = dt.getHours();
+    const hours = ((hours24 + 11) % 12) + 1;
+    const minutes = String(dt.getMinutes()).padStart(2, '0');
+    const ampm = hours24 >= 12 ? 'PM' : 'AM';
+    const dd = String(dt.getDate()).padStart(2, '0');
+    const mm = String(dt.getMonth() + 1).padStart(2, '0');
+    const yy = String(dt.getFullYear()).slice(-2);
+    return `${hours}:${minutes} ${ampm} ${dd}/${mm}/${yy}`;
+  };
+
   const openModal2 = (userId) => {
     const user = users.find((u) => u._id === userId);
     setSelectedUser(user);
@@ -107,6 +120,7 @@ const AllUser = () => {
               <th scope="col">Name</th>
               <th scope="col">Service</th>
               <th scope="col">Phone</th>
+              <th scope="col">Date & Time</th>
               {/* <th scope="col">Action</th> */}
             </tr>
           </thead>
@@ -117,6 +131,7 @@ const AllUser = () => {
                 <td className='h4'>{user.firstName} {user.lastName}</td>
                 <td className='h4'>{user.job}</td>
                 <td className='h4'>{user.phoneNumber}</td>
+                <td className='h4'>{formatDate(user.date)}</td>
                 {/* <td className='h4'>{savedStatuses[user._id] || user.status}</td> */}
                 {/* <td>
                   <button className="btn btn-primary" onClick={(e) => {
@@ -238,6 +253,8 @@ const AllUser = () => {
                 <p><strong>Job:</strong> {selectedUser.job}</p>
                 <p><strong>Country:</strong> {selectedUser.country}</p>
                 <p><strong>City:</strong> {selectedUser.city}</p>
+                <p><strong>Age:</strong> {selectedUser.age}</p>
+                <p><strong>Current Address:</strong> {selectedUser.currentAddress}</p>
                 {/* <p><strong>Address:</strong> {selectedUser.address}</p> */}
                 {/* <div className='my-5'>
                   <p><strong>Passport Size Photo:</strong><br />

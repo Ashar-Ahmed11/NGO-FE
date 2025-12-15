@@ -25,6 +25,8 @@ const AppState = (props) => {
     city: "",
     email: "",
     phoneNumber: "",
+    currentAddress: "",
+    age: "",
     
   });
 
@@ -87,6 +89,14 @@ const AppState = (props) => {
         <tr>
           <td style="padding:10px;"><b>Country</b></td>
           <td style="padding:10px;">${userData.country}</td>
+        </tr>
+        <tr>
+          <td style="padding:10px; border-bottom:1px solid #eee;"><b>Age</b></td>
+          <td style="padding:10px; border-bottom:1px solid #eee;">${userData.age}</td>
+        </tr>
+        <tr>
+          <td style="padding:10px; border-bottom:1px solid #eee;"><b>Current Address</b></td>
+          <td style="padding:10px; border-bottom:1px solid #eee;">${userData.currentAddress}</td>
         </tr>
       </table>
 
@@ -321,6 +331,8 @@ const mailSend = async (to) => {
       country: userData.country,
       city: userData.city,
       phoneNumber: userData.phoneNumber,
+      currentAddress: userData.currentAddress,
+      age: Number(userData.age),
     };
     setCreateUserLoader(true)
     try {
@@ -347,6 +359,8 @@ const mailSend = async (to) => {
         city: "",
         email: "",
         phoneNumber: "",
+        currentAddress: "",
+        age: "",
        
       })
       setImgUrl("")
